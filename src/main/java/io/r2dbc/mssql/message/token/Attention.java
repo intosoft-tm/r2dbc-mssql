@@ -79,7 +79,7 @@ public final class Attention implements ClientMessage, TokenStream {
         ByteBuf buffer = allocator.buffer(length);
         encode(buffer);
 
-        if(buffer.refCnt() != 0) {
+        if(buffer.refCnt() > 0) {
             buffer.release();
         }
 

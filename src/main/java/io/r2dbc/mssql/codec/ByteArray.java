@@ -47,7 +47,7 @@ abstract class ByteArray {
             buffer = encoded.getValue();
             return ByteBufUtil.getBytes(buffer);
         } finally {
-            if (buffer != null && buffer.refCnt() != 0) {
+            if (buffer != null && buffer.refCnt() > 0) {
                 buffer.release();
             }
         }
