@@ -32,23 +32,23 @@
     <url>https://github.com/r2dbc/r2dbc-mssql</url>
 
     <properties>
-        <assertj.version>3.23.1</assertj.version>
-        <hikari-cp.version>4.0.3</hikari-cp.version>
+        <assertj.version>3.27.3</assertj.version>
+        <hikari-cp.version>6.3.0</hikari-cp.version>
         <java.version>1.8</java.version>
         <jsr305.version>3.0.2</jsr305.version>
-        <junit.version>5.9.1</junit.version>
-        <jmh.version>1.33</jmh.version>
-        <mbr.version>0.3.0.RELEASE</mbr.version>
+        <junit.version>5.12.2</junit.version>
+        <jmh.version>1.37</jmh.version>
+        <mbr.version>0.5.0.RELEASE</mbr.version>
         <logback.version>1.2.11</logback.version>
         <mockito.version>4.11.0</mockito.version>
-        <mssql-jdbc.version>12.2.0.jre8</mssql-jdbc.version>
+        <mssql-jdbc.version>12.10.0.jre8</mssql-jdbc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <r2dbc-spi.version>1.0.0.RELEASE</r2dbc-spi.version>
-        <r2dbc-pool.version>1.0.1.RELEASE</r2dbc-pool.version>
+        <r2dbc-pool.version>1.0.2.RELEASE</r2dbc-pool.version>
         <reactor.version>2022.0.9</reactor.version>
-        <spring-framework.version>5.3.29</spring-framework.version>
-        <testcontainers.version>1.18.3</testcontainers.version>
+        <spring-framework.version>6.2.6</spring-framework.version>
+        <testcontainers.version>1.21.0</testcontainers.version>
     </properties>
 
     <licenses>
@@ -457,7 +457,7 @@
                                         <argument>-classpath</argument>
                                         <classpath/>
                                         <argument>org.openjdk.jmh.Main</argument>
-                                        <argument>.*</argument>
+                                        <argument>.*Pooled.*</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
